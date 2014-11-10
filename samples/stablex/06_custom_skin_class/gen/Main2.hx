@@ -6,11 +6,11 @@ class Main2 extends ru.stablex.ui.widgets.Widget {
         /* ui/Main2.xml:4 characters: 8-20 */
         var res = new Fractal();
         /* ui/Main2.xml:4 characters: 22-35 */
-        res.lineThickness = 8;
+        res.lineThickness = 2;
         /* ui/Main2.xml:4 characters: 40-49 */
-        res.lineColor = 0x00FF00;
+        res.lineColor = 0x151BEA;
         /* ui/Main2.xml:4 characters: 61-65 */
-        res.step = 20;
+        res.step = 12;
         return res;
     }
 
