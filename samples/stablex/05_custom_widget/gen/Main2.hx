@@ -12,16 +12,16 @@ class Main2 extends ru.stablex.ui.widgets.HBox {
     }
 
     function get_custom():ColorWidget {
-        /* ui/Main2.xml:4 characters: 5-16 */
+        /* ui/Main2.xml:7 characters: 2-13 */
         if (custom_initialized) return custom;
         custom_initialized = true;
         var res = new ColorWidget();
         this.custom = res;
-        /* ui/Main2.xml:4 characters: 55-60 */
+        /* ui/Main2.xml:11 characters: 6-11 */
         res.color = 0x0000FF;
-        /* ui/Main2.xml:4 characters: 47-48 */
+        /* ui/Main2.xml:10 characters: 6-7 */
         res.h = 100;
-        /* ui/Main2.xml:4 characters: 39-40 */
+        /* ui/Main2.xml:9 characters: 6-7 */
         res.w = 200;
         res._onInitialize();
         res._onCreate();
@@ -29,24 +29,26 @@ class Main2 extends ru.stablex.ui.widgets.HBox {
     }
 
     inline function get_click__0():flash.events.MouseEvent -> StdTypes.Void {
-        /* ui/Main2.xml:5 characters: 39-44 */
+        /* ui/Main2.xml:14 characters: 4-9 */
         var res = function (event:flash.events.MouseEvent):StdTypes.Void { 
             custom.color = Std.random(0xFFFFFF);
             custom.refresh();
-         };
+             };
         return res;
     }
 
     inline function get_paint__0():ru.stablex.ui.skins.Paint {
-        /* ui/Main2.xml:9 characters: 11-21 */
+        /* ui/Main2.xml:19 characters: 4-14 */
         var res = new ru.stablex.ui.skins.Paint();
-        /* ui/Main2.xml:9 characters: 23-28 */
-        res.color = 0x999999;
+        /* ui/Main2.xml:19 characters: 16-21 */
+        res.color = 0xF2B440;
+        /* ui/Main2.xml:19 characters: 33-38 */
+        res.alpha = .25;
         return res;
     }
 
     inline function get_button__0():ru.stablex.ui.widgets.Button {
-        /* ui/Main2.xml:5 characters: 5-11 */
+        /* ui/Main2.xml:13 characters: 2-8 */
         var res = new ru.stablex.ui.widgets.Button();
         if(ru.stablex.ui.UIBuilder.defaults.exists("Button")) {
             var defFns = ru.stablex.ui.UIBuilder.defaults.get("Button");
@@ -55,10 +57,10 @@ class Main2 extends ru.stablex.ui.widgets.HBox {
                 if(defaultsFn != null) defaultsFn(res);
             }
         }
-        /* ui/Main2.xml:5 characters: 13-17 */
+        /* ui/Main2.xml:13 characters: 10-14 */
         res.text = 'set random color';
         res.addEventListener(flash.events.MouseEvent.CLICK, get_click__0());
-        /* ui/Main2.xml:9 characters: 5-9 */
+        /* ui/Main2.xml:18 characters: 3-7 */
         res.skin = get_paint__0();
         res._onInitialize();
         res._onCreate();
