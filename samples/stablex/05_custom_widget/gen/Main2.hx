@@ -44,6 +44,10 @@ class Main2 extends ru.stablex.ui.widgets.HBox {
         res.color = 0xF2B440;
         /* ui/Main2.xml:19 characters: 33-38 */
         res.alpha = .25;
+        /* ui/Main2.xml:19 characters: 45-56 */
+        res.borderColor = 0x400000;
+        /* ui/Main2.xml:19 characters: 68-79 */
+        res.borderAlpha = .7;
         return res;
     }
 

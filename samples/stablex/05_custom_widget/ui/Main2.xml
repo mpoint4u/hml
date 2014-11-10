@@ -16,7 +16,7 @@
         custom.refresh();
 		">
 		<skin>
-			<skin:Paint color="0xF2B440" alpha=".25"  />
+			<skin:Paint color="0xF2B440" alpha=".25" borderColor="0x400000" borderAlpha=".7" />
 		</skin>
 	</Button>
 </HBox>
