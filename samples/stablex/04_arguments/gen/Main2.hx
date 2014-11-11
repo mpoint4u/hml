@@ -35,7 +35,7 @@ class Main2 extends ru.stablex.ui.widgets.HBox {
             }
         }
         /* ui/Main2.xml:4 characters: 42-46 */
-        res.text = 'type any message here';
+        res.text = 'type here';
         /* ui/Main2.xml:4 characters: 35-36 */
         res.h = 20;
         /* ui/Main2.xml:4 characters: 27-28 */
@@ -48,7 +48,7 @@ class Main2 extends ru.stablex.ui.widgets.HBox {
     }
 
     inline function get_click__0():flash.events.MouseEvent -> StdTypes.Void {
-        /* ui/Main2.xml:9 characters: 48-53 */
+        /* ui/Main2.xml:9 characters: 55-60 */
         var res = function (event:flash.events.MouseEvent):StdTypes.Void { 
             flash.Lib.current.addChild(
                 {
@@ -82,7 +82,7 @@ class Main2 extends ru.stablex.ui.widgets.HBox {
             }
         }
         /* ui/Main2.xml:9 characters: 20-24 */
-        res.text = 'Show me the alert!';
+        res.text = 'Show me the what I typed!';
         /* ui/Main2.xml:9 characters: 13-14 */
         res.h = 20;
         res.addEventListener(flash.events.MouseEvent.CLICK, get_click__0());
